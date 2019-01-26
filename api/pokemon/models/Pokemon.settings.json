@@ -1,0 +1,54 @@
+{
+  "connection": "default",
+  "collectionName": "pokemons",
+  "info": {
+    "name": "pokemon",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "pokedex_id": {
+      "default": "",
+      "type": "string"
+    },
+    "form_id": {
+      "default": "",
+      "type": "string"
+    },
+    "niantic_id": {
+      "default": "",
+      "type": "string"
+    },
+    "base_att": {
+      "default": "",
+      "type": "integer"
+    },
+    "base_def": {
+      "default": "",
+      "type": "integer"
+    },
+    "base_sta": {
+      "default": "",
+      "type": "integer"
+    },
+    "boss": {
+      "default": false,
+      "type": "boolean"
+    },
+    "boss_level": {
+      "default": "",
+      "type": "integer"
+    },
+    "shiny": {
+      "default": false,
+      "type": "boolean"
+    },
+    "parent": {
+      "model": "pokemon"
+    }
+  }
+}

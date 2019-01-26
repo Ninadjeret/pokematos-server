@@ -1,0 +1,76 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/pokemons",
+      "handler": "Pokemon.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pokemons/count",
+      "handler": "Pokemon.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pokemons/:id",
+      "handler": "Pokemon.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/pokemons",
+      "handler": "Pokemon.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/pokemons/:id",
+      "handler": "Pokemon.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/pokemons/:id",
+      "handler": "Pokemon.destroy",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/pokemons/:id/relationships/:relation",
+      "handler": "Pokemon.createRelation",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/pokemons/:id/relationships/:relation",
+      "handler": "Pokemon.updateRelation",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/pokemons/:id/relationships/:relation",
+      "handler": "Pokemon.destroyRelation",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

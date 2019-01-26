@@ -1,0 +1,76 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/connectors",
+      "handler": "Connector.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/connectors/count",
+      "handler": "Connector.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/connectors/:id",
+      "handler": "Connector.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/connectors",
+      "handler": "Connector.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/connectors/:id",
+      "handler": "Connector.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/connectors/:id",
+      "handler": "Connector.destroy",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/connectors/:id/relationships/:relation",
+      "handler": "Connector.createRelation",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/connectors/:id/relationships/:relation",
+      "handler": "Connector.updateRelation",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/connectors/:id/relationships/:relation",
+      "handler": "Connector.destroyRelation",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

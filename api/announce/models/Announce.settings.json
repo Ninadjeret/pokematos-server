@@ -1,0 +1,48 @@
+{
+  "connection": "default",
+  "collectionName": "announces",
+  "info": {
+    "name": "announce",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "user": {
+      "model": "user",
+      "plugin": "users-permissions"
+    },
+    "type": {
+      "default": "",
+      "type": "enumeration",
+      "enum": [
+        "img",
+        "text",
+        "auto",
+        " map"
+      ]
+    },
+    "url": {
+      "default": "",
+      "type": "string"
+    },
+    "content": {
+      "default": "",
+      "type": "string"
+    },
+    "guild": {
+      "model": "guild"
+    },
+    "date": {
+      "default": "",
+      "type": "date"
+    },
+    "message_id": {
+      "default": "",
+      "type": "integer"
+    }
+  }
+}

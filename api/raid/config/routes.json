@@ -1,0 +1,76 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/raids",
+      "handler": "Raid.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/raids/count",
+      "handler": "Raid.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/raids/:id",
+      "handler": "Raid.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/raids",
+      "handler": "Raid.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/raids/:id",
+      "handler": "Raid.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/raids/:id",
+      "handler": "Raid.destroy",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/raids/:id/relationships/:relation",
+      "handler": "Raid.createRelation",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/raids/:id/relationships/:relation",
+      "handler": "Raid.updateRelation",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/raids/:id/relationships/:relation",
+      "handler": "Raid.destroyRelation",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "connection": "default",
+  "collectionName": "raids",
+  "info": {
+    "name": "raid",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "egg_level": {
+      "default": "",
+      "type": "integer"
+    },
+    "pokemon": {
+      "model": "pokemon"
+    },
+    "start_time": {
+      "default": "",
+      "type": "date"
+    },
+    "city": {
+      "model": "city"
+    },
+    "gym": {
+      "model": "stop"
+    }
+  }
+}

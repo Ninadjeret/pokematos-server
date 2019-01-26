@@ -1,0 +1,45 @@
+{
+  "connection": "default",
+  "collectionName": "",
+  "info": {
+    "name": "stop",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "city": {
+      "model": "city"
+    },
+    "niantic_name": {
+      "default": "",
+      "type": "string"
+    },
+    "name": {
+      "default": "",
+      "type": "string"
+    },
+    "ex": {
+      "default": false,
+      "type": "boolean"
+    },
+    "gym": {
+      "default": false,
+      "type": "boolean"
+    },
+    "lat": {
+      "default": "",
+      "type": "decimal"
+    },
+    "lng": {
+      "default": "",
+      "type": "decimal"
+    },
+    "zone": {
+      "model": "zone"
+    }
+  }
+}

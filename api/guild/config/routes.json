@@ -1,0 +1,76 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/guilds",
+      "handler": "Guild.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/guilds/count",
+      "handler": "Guild.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/guilds/:id",
+      "handler": "Guild.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/guilds",
+      "handler": "Guild.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/guilds/:id",
+      "handler": "Guild.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/guilds/:id",
+      "handler": "Guild.destroy",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/guilds/:id/relationships/:relation",
+      "handler": "Guild.createRelation",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/guilds/:id/relationships/:relation",
+      "handler": "Guild.updateRelation",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/guilds/:id/relationships/:relation",
+      "handler": "Guild.destroyRelation",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

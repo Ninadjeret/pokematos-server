@@ -1,0 +1,20 @@
+{
+  "host": "api.pokematos.fr",
+  "port": 1337,
+  "ssl": true, 
+  "proxy": {
+    "enabled": false,
+    "ssl": true,
+    "host": "pokematos.fr",
+    "port": 8443
+  },
+  "autoReload": {
+    "enabled": true
+  },
+  "cron": {
+    "enabled": false
+  },
+  "admin": {
+    "autoOpen": true
+  }
+}

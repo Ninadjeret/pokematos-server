@@ -1,0 +1,72 @@
+{
+  "connection": "default",
+  "collectionName": "connectors",
+  "info": {
+    "name": "connector",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "default": "",
+      "type": "string"
+    },
+    "guild": {
+      "model": "guild"
+    },
+    "filter_pokemon_type": {
+      "default": "",
+      "type": "enumeration",
+      "enum": [
+        "none",
+        "level",
+        "pokemon"
+      ]
+    },
+    "filter_pokemon_level": {
+      "default": "",
+      "type": "json"
+    },
+    "filter_pokemon_pokemon": {
+      "default": "",
+      "type": "json"
+    },
+    "filter_gym_type": {
+      "default": "",
+      "type": "enumeration",
+      "enum": [
+        "none",
+        "zone",
+        "gym"
+      ]
+    },
+    "filter_gym_zone": {
+      "default": "",
+      "type": "json"
+    },
+    "filter_gym_gym": {
+      "default": "",
+      "type": "json"
+    },
+    "format": {
+      "default": "",
+      "type": "enumeration",
+      "enum": [
+        "auto",
+        "custom"
+      ]
+    },
+    "custom_message_before": {
+      "default": "",
+      "type": "string"
+    },
+    "custom_message_after": {
+      "default": "",
+      "type": "string"
+    }
+  }
+}

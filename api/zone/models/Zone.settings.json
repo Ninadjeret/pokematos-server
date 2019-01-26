@@ -1,0 +1,24 @@
+{
+  "connection": "default",
+  "collectionName": "zones",
+  "info": {
+    "name": "zone",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "default": "",
+      "type": "string",
+      "required": true
+    },
+    "city": {
+      "model": "city",
+      "via": "-"
+    }
+  }
+}

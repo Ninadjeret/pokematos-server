@@ -1,0 +1,76 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/userroles",
+      "handler": "Userrole.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/userroles/count",
+      "handler": "Userrole.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/userroles/:id",
+      "handler": "Userrole.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/userroles",
+      "handler": "Userrole.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/userroles/:id",
+      "handler": "Userrole.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/userroles/:id",
+      "handler": "Userrole.destroy",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/userroles/:id/relationships/:relation",
+      "handler": "Userrole.createRelation",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/userroles/:id/relationships/:relation",
+      "handler": "Userrole.updateRelation",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/userroles/:id/relationships/:relation",
+      "handler": "Userrole.destroyRelation",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

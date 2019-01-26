@@ -1,0 +1,20 @@
+{
+  "defaultConnection": "default",
+  "connections": {
+    "default": {
+      "connector": "strapi-hook-bookshelf",
+      "settings": {
+        "client": "mysql",
+        "host": "127.0.0.1",
+        "srv": false,
+        "port": 3306,
+        "database": "c0pokematos_api",
+        "username": "c0pokematos_api",
+        "password": "pZ6dAEvZ_dg"
+      },
+      "options": {
+        "ssl": false
+      }
+    }
+  }
+}

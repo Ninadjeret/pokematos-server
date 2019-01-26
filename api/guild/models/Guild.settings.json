@@ -1,0 +1,34 @@
+{
+  "connection": "default",
+  "collectionName": "guilds",
+  "info": {
+    "name": "guild",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "id_guild": {
+      "default": "",
+      "type": "string"
+    },
+    "name": {
+      "default": "",
+      "type": "string"
+    },
+    "type": {
+      "default": "",
+      "type": "enumeration",
+      "enum": [
+        "messenger",
+        "discord"
+      ]
+    },
+    "city_id": {
+      "model": "city"
+    }
+  }
+}
