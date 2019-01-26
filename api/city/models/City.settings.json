@@ -1,0 +1,40 @@
+{
+  "connection": "default",
+  "collectionName": "cities",
+  "info": {
+    "name": "city",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "default": "",
+      "type": "string"
+    },
+    "lat": {
+      "default": "",
+      "type": "decimal"
+    },
+    "lng": {
+      "default": "",
+      "type": "decimal"
+    },
+    "slug": {
+      "default": "",
+      "type": "string",
+      "unique": true
+    },
+    "-": {
+      "model": "zone",
+      "via": "city"
+    },
+    "undefined": {
+      "model": "raid",
+      "via": "city"
+    }
+  }
+}

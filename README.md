@@ -1,1 +1,3 @@
-# pokematos
+# project
+
+A quick description of project.

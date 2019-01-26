@@ -1,0 +1,76 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/zones",
+      "handler": "Zone.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/zones/count",
+      "handler": "Zone.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/zones/:id",
+      "handler": "Zone.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/zones",
+      "handler": "Zone.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/zones/:id",
+      "handler": "Zone.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/zones/:id",
+      "handler": "Zone.destroy",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/zones/:id/relationships/:relation",
+      "handler": "Zone.createRelation",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/zones/:id/relationships/:relation",
+      "handler": "Zone.updateRelation",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/zones/:id/relationships/:relation",
+      "handler": "Zone.destroyRelation",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

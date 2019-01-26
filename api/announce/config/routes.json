@@ -1,0 +1,76 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/announces",
+      "handler": "Announce.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/announces/count",
+      "handler": "Announce.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/announces/:id",
+      "handler": "Announce.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/announces",
+      "handler": "Announce.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/announces/:id",
+      "handler": "Announce.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/announces/:id",
+      "handler": "Announce.destroy",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/announces/:id/relationships/:relation",
+      "handler": "Announce.createRelation",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/announces/:id/relationships/:relation",
+      "handler": "Announce.updateRelation",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/announces/:id/relationships/:relation",
+      "handler": "Announce.destroyRelation",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
